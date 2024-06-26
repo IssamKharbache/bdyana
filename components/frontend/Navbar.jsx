@@ -18,10 +18,10 @@ export default function Navbar() {
 
   return (
     <div className="bg-white dark:bg-slate-700">
-      <div className="flex items-center justify-between py-3 max-w-6xl mx-auto px-8 gap-8">
+      <div className="flex items-center justify-between py-3 max-w-6xl mx-auto gap-8">
         {/* Logo */}
         <Link className="" href="/">
-          <Image src={logo} alt="BDyana logo" className="w-24" />
+          <Image src={logo} alt="BDyana logo" className="w-40" />
         </Link>
         {/* SEARCH */}
         <div className="flex-grow">
