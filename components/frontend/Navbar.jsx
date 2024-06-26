@@ -3,7 +3,7 @@ import React from "react";
 import SearchForm from "./SearchForm";
 import Link from "next/link";
 import Image from "next/image";
-import logo from "../../public/limiLogo.webp";
+import logo from "../../public/Logo.png";
 import { HelpCircle, ShoppingCart, User } from "lucide-react";
 import ThemeSwitcherBtn from "../ThemeSwitcherBtn";
 import HelpModal from "./HelpModal";
@@ -21,7 +21,7 @@ export default function Navbar() {
       <div className="flex items-center justify-between py-3 max-w-6xl mx-auto px-8 gap-8">
         {/* Logo */}
         <Link className="" href="/">
-          <Image src={logo} alt="limifood logo" className="w-24" />
+          <Image src={logo} alt="BDyana logo" className="w-24" />
         </Link>
         {/* SEARCH */}
         <div className="flex-grow">
