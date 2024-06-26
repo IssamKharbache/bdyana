@@ -15,7 +15,7 @@ export default async function Hero() {
       <div className="col-span-full sm:col-span-6 bg-blue-600 rounded-md">
         <HeroCarousel banners={banners} />
       </div>
-      <div className="col-span-3s hidden sm:block bg-white p-3 dark:bg-slate-800 rounded-lg">
+      <div className="col-span-3 hidden sm:block bg-white p-3 dark:bg-slate-800 rounded-lg">
         <Link href="#" className="flex items-center space-x-1 mb-3">
           <HelpCircle className="shrink-0 w-5 h-5 dark:text-lime-500 text-slate-900" />
           <div className="flex flex-col">
@@ -36,7 +36,7 @@ export default async function Hero() {
         >
           <CircleDollarSign className="shrink-0 w-5 h-5 dark:text-lime-500 text-slate-900" />
           <div className="flex flex-col">
-            <h2 className="uppercase text-sm">Sell on Limi</h2>
+            <h2 className="uppercase text-sm">Sell on BDyana</h2>
             <p className="text-[0.6rem]">Million of Vistors</p>
           </div>
         </Link>
