@@ -10,7 +10,7 @@ import { store } from "@/redux/store";
 import { SessionProvider } from "next-auth/react";
 export default function Providers({ children }) {
   return (
-    <ThemeProvider attribute="class" defaultTheme="dark">
+    <ThemeProvider attribute="class" defaultTheme="light">
       <NextSSRPlugin routerConfig={extractRouterConfig(ourFileRouter)} />
       <Toaster position="top-center" reverseOrder={false} />
       <SessionProvider>
