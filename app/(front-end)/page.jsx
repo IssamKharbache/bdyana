@@ -10,8 +10,9 @@ import { getServerSession } from "next-auth";
 export default async function Home() {
   const categoriesData = await getData("categories");
   const categories = categoriesData.filter((category) => {
-    return category.products.length > 3;
+    return category.products.length >= 1;
   });
+  console.log(categories);
   const trainings = await getData("trainings");
   const session = await getServerSession(authOptions);
   console.log(session?.user);
@@ -23,7 +24,7 @@ export default async function Home() {
       {categories.map((category, i) => {
         return (
           <div className="py-8" key={i}>
-            <CategoryList isMarketPage={true} category={category} />
+            <CategoryList isMarketPage={false} category={category} />
           </div>
         );
       })}
