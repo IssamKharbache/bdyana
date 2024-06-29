@@ -10,9 +10,9 @@ import { getServerSession } from "next-auth";
 export default async function Home() {
   const categoriesData = await getData("categories");
   const categories = categoriesData.filter((category) => {
-    return category.products.length >= 1;
+    return category.title === "Beauty & Bodycare" || category.title === "Electrical & Electronics"  ;
   });
-  console.log(categories);
+
   const trainings = await getData("trainings");
   const session = await getServerSession(authOptions);
   console.log(session?.user);
