@@ -19,21 +19,14 @@ export default async function Home() {
     <div className="min-h-screen">
       <Hero />
       <MarketList />
-      {categories.map((category, i) => {
-        return (
-          <div className="py-8" key={i}>
-            <CategoryList category={category} />
-          </div>
-        );
-      })}
 
-      {/* {categories.map((category, i) => {
+      {categories.map((category, i) => {
         return (
           <div className="py-8" key={i}>
             <CategoryList isMarketPage={false} category={category} />
           </div>
         );
-      })} */}
+      })}
 
       <CommunityTrainings
         title="Featured Trainings"
