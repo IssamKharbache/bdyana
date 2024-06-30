@@ -10,7 +10,7 @@ import { getServerSession } from "next-auth";
 export default async function Home() {
   const categoriesData = await getData("categories");
   const categories = categoriesData.filter((category) => {
-    return category.title === "Beauty & Bodycare" || category.title === "Electrical & Electronics"  ;
+    return category.title === "Women's & Girls' Fashion" || category.title === "Beauty & Bodycare" || category.title === "Mother & Baby" || category.title === "Men's & Boys' Fashion" || category.title === "Home & Lifestyle" || category.title === "Electrical & Electronics";
   });
 
   const trainings = await getData("trainings");

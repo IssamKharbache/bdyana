@@ -1,6 +1,6 @@
 "use client";
 import { addToCart } from "@/redux/slices/cartSlice";
-import { BaggageClaim } from "lucide-react";
+import { ShoppingCart  } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -27,9 +27,9 @@ export default function Product({ product }) {
       </Link>
       <div className="px-4">
         <Link href={`/products/${product.slug}`}>
-          <h2 className="text-center dark:text-slate-200 text-slate-800 my-2 font-semibold">
+          <h4 className="text-sm text-center dark:text-slate-200 text-slate-800 my-2">
             {product.title}
-          </h2>
+          </h4>
         </Link>
         <div className="flex items-center justify-between gap-2 pb-3 dark:text-slate-200 text-slate-800">
           <p>৳ {product.salePrice}</p>
@@ -37,8 +37,8 @@ export default function Product({ product }) {
             onClick={() => handleAddToCart()}
             className="flex items-center space-x-2 bg-lime-600 px-4 py-2 rounded-md text-white"
           >
-            <BaggageClaim />
-            <span>Add</span>
+            <ShoppingCart size={18} />
+            {/* <span>Add</span> */}
           </button>
         </div>
       </div>
