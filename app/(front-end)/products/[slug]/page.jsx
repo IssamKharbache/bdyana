@@ -26,9 +26,9 @@ export default async function ProductDetailPage({ params: { slug } }) {
           productImages={product.productImages}
           thumbnail={product.imageUrl}
         />
-        <div className="col-span-6">
+        <div className="col-span-5">
           <div className="flex items-center justify-between mb-6">
-            <h2 className="text-xl lg:text-3xl font-semibold">
+            <h2 className="text-xl lg:text-2xl font-semibold">
               {product.title}
             </h2>
             <ProductShareButton urlToShare={urlToShare} />
@@ -66,7 +66,7 @@ export default async function ProductDetailPage({ params: { slug } }) {
 
           <div className="p-4">
             <div className="flex rounded-lg py-2 px-4 bg-orange-400 text-slate-50 items-center gap-3">
-              <span>Limi Express </span>
+              <span>BDyana Express </span>
               <Send />
             </div>
             <div className="py-3 text-slate-100 border-b border-gray-500">

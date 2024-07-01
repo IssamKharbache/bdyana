@@ -7,6 +7,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { authOptions } from "@/lib/authOptions";
 import { getServerSession } from "next-auth";
+import CategoryGrid from "@/components/frontend/CategoryGrid";
 export default async function Home() {
   const categoriesData = await getData("categories");
   const categories = categoriesData.filter((category) => {
@@ -18,8 +19,7 @@ export default async function Home() {
   return (
     <div className="min-h-screen">
       <Hero />
-      <MarketList />
-
+      <CategoryGrid />
       {categories.map((category, i) => {
         return (
           <div className="py-8" key={i}>
@@ -28,6 +28,7 @@ export default async function Home() {
         );
       })}
 
+      <MarketList />
       <CommunityTrainings
         title="Featured Trainings"
         trainings={trainings.slice(0, 3)}

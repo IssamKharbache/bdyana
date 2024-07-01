@@ -20,9 +20,9 @@ export default function Product({ product }) {
         <Image
           src={product.imageUrl}
           alt={product.title}
-          width={556}
-          height={556}
-          className="w-full h-48 object-cover"
+          width={700}
+          height={700}
+          className="w-full h-60 object-cover"
         />
       </Link>
       <div className="px-4">
