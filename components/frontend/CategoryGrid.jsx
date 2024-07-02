@@ -1,76 +1,38 @@
-import Link from 'next/link'
-import React from 'react'
+import { getData } from "@/lib/getData";
+import Image from "next/image";
+import Link from "next/link";
+import React from "react";
 
-export default function CategoryGrid() {
+export default async function CategoryGrid() {
+  const categoriesData = await getData("categories");
+  const categories = categoriesData.filter(
+    (category) => category.products.length > 0
+  );
+  // console.log(categories);
   return (
-    <div className="bg-white border border-gray-300 rounded-lg  dark:bg-gray-700 dark:border-gray-700 text-slate-800 overflow-hidden">
-      <div className="bg-slate-100 dark:bg-gray-800 py-3 px-6 font-semibold border-b border-gray-300 dark:border-gray-600 text-slate-800 dark:text-slate-100 flex justify-between items-center">
-        <h2>Category List</h2>
-        <Link
-          className="bg-lime-600 hover:bg-lime-800 duration-300 transition-all text-slate-50 rounded-md px-4 py-2"
-          href={'/'}
-        >
-          See All
-        </Link>
-      </div>
-      <div className="flex grid grid-cols-7 text-center items-center px-8 py-10 gap-5">
-        <div>
-            <img src="/Logo.png"/>
-            <p className="text-sm text-slate-100 py-2">Garments & Accessories</p>
-        </div>
-        <div>
-            <img src="/Logo.png"/>
-            <p className="text-sm text-slate-100 py-2">Garments & Accessories</p>
-        </div>
-        <div>
-            <img src="/Logo.png"/>
-            <p className="text-sm text-slate-100 py-2">Garments & Accessories</p>
-        </div>
-        <div>
-            <img src="/Logo.png"/>
-            <p className="text-sm text-slate-100 py-2">Garments & Accessories</p>
-        </div>
-        <div>
-            <img src="/Logo.png"/>
-            <p className="text-sm text-slate-100 py-2">Stationery & Craft</p>
-        </div>
-        <div>
-            <img src="/Logo.png"/>
-            <p className="text-sm text-slate-100 py-2">Garments & Accessories</p>
-        </div>
-        <div>
-            <img src="/Logo.png"/>
-            <p className="text-sm text-slate-100 py-2">Garments & Accessories</p>
-        </div>
-        <div>
-            <img src="/Logo.png"/>
-            <p className="text-sm text-slate-100 py-2">Garments & Accessories</p>
-        </div>
-        <div>
-            <img src="/Logo.png"/>
-            <p className="text-sm text-slate-100 py-2">Garments & Accessories</p>
-        </div>
-        <div>
-            <img src="/Logo.png"/>
-            <p className="text-sm text-slate-100 py-2">Garments & Accessories</p>
-        </div>
-        <div>
-            <img src="/Logo.png"/>
-            <p className="text-sm text-slate-100 py-2">Garments & Accessories</p>
-        </div>
-        <div>
-            <img src="/Logo.png"/>
-            <p className="text-sm text-slate-100 py-2">Garments & Accessories</p>
-        </div>
-        <div>
-            <img src="/Logo.png"/>
-            <p className="text-sm text-slate-100 py-2">Garments & Accessories</p>
-        </div>
-        <div>
-            <img src="/Logo.png"/>
-            <p className="text-sm text-slate-100 py-2">Garments & Accessories</p>
-        </div>
+    <div className="sm:col-span-3 sm:block bg-white border border-gray-300 rounded-sm  dark:bg-gray-700 dark:border-gray-700 text-slate-800 overflow-hidden hidden">
+      <h2 className="bg-slate-100 dark:bg-gray-800 py-3 px-6 font-semibold border-b border-gray-300 dark:border-gray-600 text-slate-800 dark:text-slate-100">Shop By Category</h2>
+      <div className="flex grid grid-cols-7 text-center items-center px-5 py-8 gap-x-3 gap-y-14">
+        {categories.length > 0 &&
+          categories.map((category, i) => {
+            return (
+              <Link
+                key={i}
+                href={`/category/${category.slug}`}
+                className="gap-3 hover:bg-slate-50 duration-300 transition-all dark:text-slate-300 dark:hover:bg-slate-600 rounded-md"
+              >
+                <Image
+                  width={500}
+                  height={500}
+                  className="w-16 h-16 rounded-full object-cover border border-lime-300"
+                  src={category.imageUrl}
+                  alt={category.title}
+                />
+                <span className="text-sm">{category.title}</span>
+              </Link>
+            );
+          })}
       </div>
     </div>
-  )
+  );
 }
