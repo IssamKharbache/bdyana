@@ -28,7 +28,7 @@ export default async function CategoryGrid() {
                   src={category.imageUrl}
                   alt={category.title}
                 />
-                <span className="text-sm">{category.title}</span>
+                <span className="text-sm block mt-4">{category.title}</span>
               </Link>
             );
           })}
