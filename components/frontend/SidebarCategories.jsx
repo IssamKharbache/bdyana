@@ -15,7 +15,7 @@ export default async function SidebarCategories() {
       <h2 className="bg-slate-100 dark:bg-gray-800 py-3 px-6 font-semibold border-b border-gray-300 dark:border-gray-600 text-slate-800 dark:text-slate-100">
         Shop By Category ({categories.length})
       </h2>
-      <div className="py-3 px-3 h-[500px] overflow-y-auto flex flex-col gap-2">
+      <div className="py-3 px-3 h-[400px] overflow-y-auto flex flex-col gap-2">
         {categories.length > 0 &&
           categories.map((category, i) => {
             return (
