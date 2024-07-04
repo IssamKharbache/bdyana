@@ -27,7 +27,7 @@ export default async function SidebarCategories() {
                 <Image
                   width={500}
                   height={500}
-                  className="w-8 h-8 rounded-full object-cover border border-lime-300"
+                  className="w-7 h-7 rounded-full object-cover border border-lime-300"
                   src={category.imageUrl}
                   alt={category.title}
                 />
