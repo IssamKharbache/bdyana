@@ -1,4 +1,5 @@
 import CategoryList from "@/components/frontend/CategoryList";
+import NewProducts from "@/components/frontend/NewProducts";
 import CommunityTrainings from "@/components/frontend/CommunityTrainings";
 import Hero from "@/components/frontend/Hero";
 import MarketList from "@/components/frontend/MarketList";
@@ -19,6 +20,7 @@ export default async function Home() {
   return (
     <div className="min-h-screen">
       <Hero />
+      <NewProducts />
       <CategoryGrid />
       {categories.map((category, i) => {
         return (
