@@ -24,7 +24,7 @@ export const getLatestProducts = async (pageSize) => {
 
 export const getAllProducts = async (params) => {
   try {
-    const { page = 1, pageSize = 16 } = params;
+    const { page = 1, pageSize = 18 } = params;
     const skipAmount = (page - 1) * pageSize;
 
     const products = await db.products.findMany({
