@@ -10,7 +10,7 @@ export default function CategoryCarousel({ products, isMarketPage = false }) {
   const responsive = {
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
-      items: isMarketPage ? 3 : 4,
+      items: isMarketPage ? 4 : 5,
       slidesToSlide: 3, // optional, default to 1.
     },
     tablet: {
