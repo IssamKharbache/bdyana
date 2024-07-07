@@ -16,14 +16,14 @@ export default async function Hero() {
         <HeroCarousel banners={banners} />
       </div>
       <div className="col-span-2 hidden sm:block bg-white p-3 dark:bg-slate-800 rounded-sm">
-        <Link href="#" className="flex items-center space-x-1 mb-3">
+        <Link href="#" className="flex items-center space-x-1 mb-5">
           <HelpCircle className="shrink-0 w-5 h-5 dark:text-lime-500 text-slate-900" />
           <div className="flex flex-col">
             <h2 className="uppercase text-sm">Help Center</h2>
             <p className="text-[0.6rem]">Guide to Customer Care</p>
           </div>
         </Link>
-        <Link href="#" className="flex items-center space-x-1 mb-3">
+        <Link href="#" className="flex items-center space-x-1 mb-5">
           <FolderSync className="shrink-0 w-5 h-5 dark:text-lime-500 text-slate-900" />
           <div className="flex flex-col">
             <h2 className="uppercase text-sm">Easy Return</h2>
@@ -32,7 +32,7 @@ export default async function Hero() {
         </Link>
         <Link
           href="/register-farmer"
-          className="flex items-center space-x-1 mb-6"
+          className="flex items-center space-x-1 mb-12"
         >
           <CircleDollarSign className="shrink-0 w-5 h-5 dark:text-lime-500 text-slate-900" />
           <div className="flex flex-col">
