@@ -22,7 +22,7 @@ export default function Product({ product }) {
           alt={product.title}
           width={700}
           height={700}
-          className="w-full h-60 object-cover"
+          className="w-full h-60"
         />
       </Link>
       <div className="px-4">
