@@ -15,9 +15,10 @@ export default function NewProduct() {
   }, []);
 
   return (
-    <div>
-      <h2>Latest Products</h2>
-      <div className="flex grid grid-cols-6">
+    <div className="py-14">
+      <h2>New Arrivals</h2>
+      <p>100+ products added today</p>
+      <div className="flex grid grid-cols-6 sm:col-span-3 mt-4">
       {productsList.map((product) => (
         <div key={product.id}>
           <Product product={product}/>
