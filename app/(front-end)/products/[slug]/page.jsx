@@ -36,7 +36,7 @@ export default async function ProductDetailPage({ params: { slug } }) {
           </div>
           <div className="border-b border-gray-500">
             <p className="py-2 ">{product.description}</p>
-            <div className="flex items-center gap-8 mb-4">
+            <div className="flex items-center gap-8 mb-4 justify-between">
               <p>SKU: {product.sku}</p>
               <p className="bg-lime-200 py-1.5 px-4 rounded-full text-slate-900 ">
                 <b>Stock</b>: {product.productStock}
