@@ -35,7 +35,7 @@ export default function Product({ product }) {
           <p>৳ {product.salePrice}</p>
           <button
             onClick={() => handleAddToCart()}
-            className="flex items-center space-x-2 bg-lime-600 px-4 py-2 rounded-md text-white"
+            className="flex items-center space-x-2 bg-gray-100 px-3 py-2 rounded-md text-black border border-gray-300"
           >
             <ShoppingCart size={18} />
             {/* <span>Add</span> */}
