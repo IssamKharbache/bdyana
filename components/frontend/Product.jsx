@@ -25,7 +25,7 @@ export default function Product({ product }) {
           className="w-full"
         />
       </Link>
-      <div className="px-4">
+      <div className="px-2">
         <Link href={`/products/${product.slug}`}>
           <h4 className="text-sm text-center dark:text-slate-200 text-slate-800 my-2">
             {product.title}
