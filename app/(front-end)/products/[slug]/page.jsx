@@ -5,6 +5,7 @@ import ProductImageCarousel from "@/components/frontend/ProductImageCarousel";
 import ProductShareButton from "@/components/frontend/ProductShareButton";
 import { getData } from "@/lib/getData";
 import { BaggageClaim, Minus, Plus, Send, Share2, Tag } from "lucide-react";
+import { ShoppingCart  } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
