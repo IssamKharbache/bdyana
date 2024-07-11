@@ -43,8 +43,8 @@ export default function Navbar() {
             )}
             <HelpModal />
             <CartCount />
+            <ThemeSwitcherBtn />
           </div>
-        <ThemeSwitcherBtn />
         </div>
         <div className="container mx-auto mt-4">
           <div className="flex w-full md:hidden">
