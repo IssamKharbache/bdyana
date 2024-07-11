@@ -5,7 +5,7 @@ import ProductImageCarousel from "@/components/frontend/ProductImageCarousel";
 import ProductShareButton from "@/components/frontend/ProductShareButton";
 import { getData } from "@/lib/getData";
 import { BaggageClaim, Minus, Plus, Send, Share2, Tag } from "lucide-react";
-import { ShoppingCart  } from "lucide-react";
+import { ShoppingCart } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -23,11 +23,13 @@ export default async function ProductDetailPage({ params: { slug } }) {
     <div>
       <Breadcrumb />
       <div className="grid grid-cols-12 gap-8">
-        <ProductImageCarousel
-          productImages={product.productImages}
-          thumbnail={product.imageUrl}
-        />
-        <div className="col-span-5">
+        <div className="col-span-12 lg:col-span-4">
+            <ProductImageCarousel
+              productImages={product.productImages}
+              thumbnail={product.imageUrl}
+            />
+        </div>
+        <div className="col-span-12 md:col-span-7 lg:col-span-5">
           <div className="flex items-center justify-between mb-6">
             <h2 className="text-xl lg:text-2xl font-semibold">
               {product.title}
@@ -60,7 +62,7 @@ export default async function ProductDetailPage({ params: { slug } }) {
             <p>Something Here</p>
           </div>
         </div>
-        <div className="col-span-3 sm:block bg-white border border-gray-300 rounded-lg  dark:bg-gray-700 dark:border-gray-700 text-slate-800 overflow-hidden hidden">
+        <div className="col-span-12 md:col-span-5 lg:col-span-3 sm:block bg-white border border-gray-300 rounded-lg  dark:bg-gray-700 dark:border-gray-700 text-slate-800 overflow-hidden hidden">
           <h2 className="bg-slate-100 dark:bg-gray-800 py-3 px-6 font-semibold border-b border-gray-300 dark:border-gray-600 text-slate-800 dark:text-slate-100">
             DELIVERY & RETURNS
           </h2>
