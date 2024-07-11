@@ -18,33 +18,41 @@ export default function Navbar() {
 
   return (
     <div className="bg-white dark:bg-slate-700">
-      <div className="flex items-center justify-between pt-6 pb-3 max-w-6xl mx-auto gap-8">
+      <div className="container flex items-center justify-between pt-5 px-0 max-w-6xl gap-8 mx-auto">
         {/* Logo */}
         <Link className="" href="/">
           <Image src={logo} alt="BDyana logo" className="w-40" />
         </Link>
-        {/* SEARCH */}
-        <div className="flex-grow">
-          <SearchForm />
-        </div>
-        <div className="flex gap-8">
-          {status === "unauthenticated" ? (
-            <Link
-              href="/login"
-              className="flex items-center space-x-1 text-green-950 dark:text-slate-100"
-            >
-              <User />
-              <span>Login</span>
-            </Link>
-          ) : (
-            <UserAvatar user={session?.user} />
-          )}
-
-          <HelpModal />
-          <CartCount />
-        </div>
+          {/* SEARCH */}
+          <div className="flex-grow hidden md:flex">
+            <div className="w-full">
+            <SearchForm />
+            </div>
+          </div>
+          <div className="flex gap-4">
+            {status === "unauthenticated" ? (
+              <Link
+                href="/login"
+                className="flex items-center space-x-1 text-green-950 dark:text-slate-100"
+              >
+                <User />
+                <span>Login</span>
+              </Link>
+            ) : (
+              <UserAvatar user={session?.user} />
+            )}
+            <HelpModal />
+            <CartCount />
+          </div>
         <ThemeSwitcherBtn />
-      </div>
+        </div>
+        <div className="container mx-auto mt-4">
+          <div className="flex w-full md:hidden">
+              <div className="flex w-full overflow-hidden rounded-md">
+                <SearchForm />
+              </div>
+          </div>
+        </div>
     </div>
   );
 }
