@@ -44,7 +44,7 @@ export default function Navbar() {
         <ThemeSwitcherBtn />
           </div>
         </div>
-        <div className="container w-full mx-auto mt-4">
+        <div className="container w-full mx-auto mt-2">
           <div className="flex w-full md:hidden mx-auto">
               <div className="flex overflow-hidden rounded-md">
                 <SearchForm />
