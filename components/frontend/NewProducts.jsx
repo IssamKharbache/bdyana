@@ -15,7 +15,7 @@ export default function NewProduct() {
   }, []);
 
   return (
-    <div className="py-14">
+    <div className="py-12">
       <h2>New Arrivals</h2>
       <p>100+ products added today</p>
       <div className="flex grid grid-cols-2 lg:grid-cols-6 md:grid-cols-4 mt-4">
