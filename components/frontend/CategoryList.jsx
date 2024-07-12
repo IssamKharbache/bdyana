@@ -9,7 +9,7 @@ export default function CategoryList({ category, isMarketPage }) {
       <div className="bg-slate-100 dark:bg-gray-800 py-3 px-6 font-semibold border-b border-gray-300 dark:border-gray-600 text-slate-800 dark:text-slate-100 flex justify-between items-center">
         <h2>{category.title}</h2>
         <Link
-          className="bg-lime-600 hover:bg-lime-800 duration-300 transition-all text-slate-50 rounded-md px-4 py-2"
+          className="hover:bg-lime-800 duration-300 transition-all text-slate-50 rounded-md px-4 py-2"
           href={`/category/${category.slug}`}
         >
           <MoveRight />
