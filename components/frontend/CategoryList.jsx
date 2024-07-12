@@ -1,6 +1,7 @@
 import Link from "next/link";
 import React from "react";
 import CategoryCarousel from "./CategoryCarousel";
+import { MoveRight } from 'lucide-react';
 
 export default function CategoryList({ category, isMarketPage }) {
   return (
@@ -11,7 +12,7 @@ export default function CategoryList({ category, isMarketPage }) {
           className="bg-lime-600 hover:bg-lime-800 duration-300 transition-all text-slate-50 rounded-md px-4 py-2"
           href={`/category/${category.slug}`}
         >
-          See All
+          <MoveRight />
         </Link>
       </div>
       <div className="bg-white dark:bg-slate-700 p-4">
