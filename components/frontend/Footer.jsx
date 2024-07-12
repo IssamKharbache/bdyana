@@ -1,3 +1,4 @@
+import HelpModal from "./HelpModal";
 const Footer = () => {
   return (
     <section className="py-10 bg-gray-50 sm:pt-16 lg:pt-24">
@@ -147,14 +148,7 @@ const Footer = () => {
 
             <ul className="mt-6 space-y-4">
               <li>
-                <a
-                  href="#"
-                  title=""
-                  className="flex text-base text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"
-                >
-                  {" "}
-                  Customer Support{" "}
-                </a>
+              <HelpModal />
               </li>
 
               <li>
