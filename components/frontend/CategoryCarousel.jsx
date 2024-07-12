@@ -41,7 +41,7 @@ export default function CategoryCarousel({ products, isMarketPage = false }) {
       removeArrowOnDeviceType={["tablet", "mobile"]}
       // deviceType={}
       dotListClass="custom-dot-list-style"
-      itemClass="px-4"
+      itemClass="px-2"
     >
       {products.map((product, i) => {
         return <Product product={product} key={i} />;
