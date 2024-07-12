@@ -6,7 +6,6 @@ import Image from "next/image";
 import logo from "../../public/Logo.png";
 import { HelpCircle, ShoppingCart, User } from "lucide-react";
 import ThemeSwitcherBtn from "../ThemeSwitcherBtn";
-import HelpModal from "./HelpModal";
 import CartCount from "./CartCount";
 import { useSession } from "next-auth/react";
 import UserAvatar from "../backoffice/UserAvatar";
@@ -41,7 +40,6 @@ export default function Navbar() {
             ) : (
               <UserAvatar user={session?.user} />
             )}
-            <HelpModal />
             <CartCount />
         <ThemeSwitcherBtn />
           </div>
