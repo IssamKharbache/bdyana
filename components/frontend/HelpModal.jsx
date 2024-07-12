@@ -4,7 +4,6 @@ import { Button, Modal } from "flowbite-react";
 import {
   CornerDownLeft,
   Headphones,
-  HelpCircle,
   MessageSquare,
   Truck,
 } from "lucide-react";
@@ -21,7 +20,6 @@ export default function HelpModal() {
         onClick={() => setOpenModal(true)}
         className="flex items-center space-x-1 text-green-950 dark:text-slate-100"
       >
-        <HelpCircle />
         <span>Help</span>
       </button>
       <Modal show={openModal} onClose={() => setOpenModal(false)}>
@@ -31,7 +29,7 @@ export default function HelpModal() {
         <Modal.Body>
           <div className="grid grid-cols-2 gap-6">
             <Link
-              href="tel:2567833663"
+              href="tel:01511309309"
               className="flex items-center space-x-2 text-green-950 dark:text-slate-100"
             >
               <div className="flex items-center w-10 h-10 bg-lime-100 justify-center rounded-full">
@@ -49,7 +47,7 @@ export default function HelpModal() {
               <span>Track your Order</span>
             </Link>
             <Link
-              href="tel:2567833663"
+              href="tel:01511309309"
               className="flex items-center space-x-2 text-green-950 dark:text-slate-100"
             >
               <div className="flex items-center w-10 h-10 bg-lime-100 justify-center rounded-full">
@@ -58,7 +56,7 @@ export default function HelpModal() {
               <span>Returns and Refunds</span>
             </Link>
             <Link
-              href="tel:2567833663"
+              href="tel:01511309309"
               className="flex items-center space-x-2 text-green-950 dark:text-slate-100"
             >
               <div className="flex items-center w-10 h-10 bg-lime-100 justify-center rounded-full">
