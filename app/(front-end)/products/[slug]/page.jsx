@@ -67,7 +67,7 @@ export default async function ProductDetailPage({ params: { slug } }) {
             DELIVERY & RETURNS
           </h2>
 
-          <div className="p-4">
+          {/* <div className="p-4">
             <div className="flex rounded-lg py-2 px-4 bg-orange-400 text-slate-50 items-center gap-3">
               <span>BDyana Express </span>
               <Send />
@@ -111,7 +111,7 @@ export default async function ProductDetailPage({ params: { slug } }) {
                 <option>Germany</option>
               </select>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
       <div className="bg-white dark:bg-slate-700 my-8 rounded-xl p-4">
