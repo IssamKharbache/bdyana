@@ -22,7 +22,8 @@ h5 {
   font-size: 12px;
   font-weight: 400;
 }
-
+.swiper-initialized {box-shadow: 0px 0 1px #aaa; margin-bottom: 0 0 8px 0;}
+.swiper-slide-thumb-active {border: 2px solid #aaa;}
 @layer base {
   :root {
     --background: 0 0% 100%;
