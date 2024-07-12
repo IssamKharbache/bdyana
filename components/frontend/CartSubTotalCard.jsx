@@ -2,7 +2,7 @@ import Link from "next/link";
 import React from "react";
 
 export default function CartSubTotalCard({ subTotal }) {
-  const shipping = 10.0;
+  const shipping = 30.0;
   const tax = 0.0;
   const totalPrice = (
     Number(subTotal) +
@@ -16,8 +16,12 @@ export default function CartSubTotalCard({ subTotal }) {
         Add your Shipping address at checkout to see shipping charges
       </p>
       <div className="flex items-center justify-between py-4 font-bold">
+        <span>Delivery Charge </span>
+        <span>৳ 30</span>
+      </div>
+      <div className="flex items-center justify-between py-4 font-bold">
         <span>Total </span>
-        <span>${totalPrice}</span>
+        <span>৳{totalPrice}</span>
       </div>
       <div className="mt-8">
         <Link
