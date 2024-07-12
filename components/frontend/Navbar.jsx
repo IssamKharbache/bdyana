@@ -17,7 +17,7 @@ export default function Navbar() {
 
   return (
     <div className="bg-white dark:bg-slate-700">
-      <div className="container flex items-center justify-between lg:pt-2 pt-5 lg:px-0 px-5 max-w-6xl gap-8 mx-auto">
+      <div className="container flex items-center justify-between lg:pt-5 pt-2 lg:px-0 px-5 max-w-6xl gap-8 mx-auto">
         {/* Logo */}
         <Link className="" href="/">
           <Image src={logo} alt="BDyana logo" className="w-40" />
