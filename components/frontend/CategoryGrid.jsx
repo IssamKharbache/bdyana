@@ -34,7 +34,7 @@ export default async function CategoryGrid() {
                 <Image
                   width={500}
                   height={500}
-                  className="w-18 h-18 rounded-full object-cover border border-gray-300 m-auto"
+                  className="w-20 h-20 rounded-full object-cover border border-gray-300 m-auto"
                   src={category.imageUrl}
                   alt={category.title}
                 />
