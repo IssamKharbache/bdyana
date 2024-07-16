@@ -35,7 +35,7 @@ export default function Navbar() {
                 className="flex items-center space-x-1 text-green-950 dark:text-slate-100"
               >
                 <User />
-                <span>Login</span>
+                <span className="md:flex hidden">Login</span>
               </Link>
             ) : (
               <UserAvatar user={session?.user} />
