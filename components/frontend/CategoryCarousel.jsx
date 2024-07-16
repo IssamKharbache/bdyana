@@ -15,12 +15,12 @@ export default function CategoryCarousel({ products, isMarketPage = false }) {
     },
     tablet: {
       breakpoint: { max: 1024, min: 464 },
-      items: isMarketPage ? 2 : 3,
+      items: isMarketPage ? 3 : 4,
       slidesToSlide: 2, // optional, default to 1.
     },
     mobile: {
       breakpoint: { max: 464, min: 0 },
-      items: 2,
+      items: 3,
       slidesToSlide: 1, // optional, default to 1.
     },
   };
