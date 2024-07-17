@@ -1,0 +1,22 @@
+{
+  "rewrites": [],
+  "headers": [
+    {
+      "source": "/api/users",
+      "headers": [
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "https://www.bdyana.com, https://bdyana.com" // Allow both origins
+        },
+        {
+          "key": "Access-Control-Allow-Methods",
+          "value": "GET, POST, PUT, DELETE, OPTIONS"
+        },
+        {
+          "key": "Access-Control-Allow-Headers",
+          "value": "Content-Type, Authorization"
+        }
+      ]
+    }
+  ]
+}
