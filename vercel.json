@@ -6,7 +6,7 @@
       "headers": [
         {
           "key": "Access-Control-Allow-Origin",
-          "value": https://bdyana.com"
+          "value": "https://bdyana.com"
         },
         {
           "key": "Access-Control-Allow-Methods",
