@@ -34,7 +34,7 @@ export default async function page() {
           </div>
 
           <ul className="mt-8 space-y-5 lg:mt-12 sm:space-y-6 lg:space-y-10">
-            {userOrders.map((order, i) => {
+            {orders.map((order, i) => {
               return <OrderCard key={i} order={order} />;
             })}
           </ul>
