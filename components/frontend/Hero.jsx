@@ -4,6 +4,7 @@ import React from "react";
 import HeroCarousel from "./HeroCarousel";
 import advert from "../../public/adv.gif";
 import { CircleDollarSign, FolderSync, HelpCircle } from "lucide-react";
+import SidebarMenu from "./SidebarMenu";
 import SidebarCategories from "./SidebarCategories";
 import { getData } from "@/lib/getData";
 
@@ -11,7 +12,7 @@ export default async function Hero() {
   const banners = await getData("banners");
   return (
     <div className="grid grid-cols-12 gap-4">
-      <SidebarCategories />
+      <SidebarMenu />
       <div className="col-span-full sm:col-span-7 bg-blue-600 rounded-sm">
         <HeroCarousel banners={banners} />
       </div>
