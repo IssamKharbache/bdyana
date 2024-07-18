@@ -9,7 +9,7 @@ export default async function SidebarCategories() {
         Shop By Category
       </h2>
       
-      <div className="py-2 pl-3 pr-0 h-[340px] flex flex-col gap-2 text-sm relative">
+      <div className="py-2 pl-3 pr-0 h-[345px] flex flex-col gap-2 text-sm relative">
         <ul className="">
         <li className="py-1 group">
           <Link href="https://www.bdyana.com/category/industrial-machineries"
