@@ -32,7 +32,7 @@ export default function Product({ product }) {
           </h4>
           {/* <p>{category.title}</p> */}
         </Link>
-        <div className="flex items-center justify-between gap-2 pb-3 dark:text-slate-200 text-slate-800">
+        <div className="flex items-center justify-between gap-2 pb-1 dark:text-slate-200 text-slate-800">
         <p>৳ {product.salePrice}</p>
           <button
             onClick={() => handleAddToCart()}
