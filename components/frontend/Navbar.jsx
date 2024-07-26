@@ -28,7 +28,7 @@ export default function Navbar() {
             <SearchForm />
             </div>
           </div>
-          <div className="flex gap-4">
+          <div className="flex gap-4 lg:gap-2">
             {status === "unauthenticated" ? (
               <Link
                 href="/login"
