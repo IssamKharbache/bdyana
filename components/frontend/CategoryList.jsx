@@ -9,13 +9,13 @@ export default function CategoryList({ category, isMarketPage }) {
       <div className="bg-slate-100 dark:bg-gray-800 py-1 px-4 font-semibold border-b border-gray-300 dark:border-gray-600 text-slate-800 dark:text-slate-100 flex justify-between items-center">
         <h2>{category.title}</h2>
         <Link
-          className="hover:bg-lime-800 duration-300 transition-all text-slate-50 rounded-md px-4 py-2"
+          className="duration-300 transition-all text-slate-800 dark:text-slate-100 rounded-md px-4 py-2"
           href={`/category/${category.slug}`}
         >
           <MoveRight />
         </Link>
       </div>
-      <div className="bg-white dark:bg-slate-700 p-4">
+      <div className="bg-white dark:bg-slate-700 py-4 px-2">
         <CategoryCarousel
           isMarketPage={isMarketPage}
           products={category.products}
