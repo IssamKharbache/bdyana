@@ -12,7 +12,7 @@ export default async function FilteredProducts({
   const totalPages = Math.ceil(productCount / pageSize);
   return (
     <div className="">
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-2">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-1">
         {products.map((product, i) => {
           return <Product product={product} key={i} />;
         })}
