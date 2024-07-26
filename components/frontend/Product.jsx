@@ -15,13 +15,13 @@ export default function Product({ product }) {
     toast.success("Item added Successfully");
   }
   return (
-    <div className="mx-1 mb-5 bg-white dark:bg-slate-900 overflow-hidden border hover:shadow">
+    <div className="mb-5 mx-1 bg-white dark:bg-slate-900 overflow-hidden border hover:shadow">
       <Link href={`/products/${product.slug}`}>
         <Image
           src={product.imageUrl}
           alt={product.title}
-          width={700}
-          height={700}
+          width={500}
+          height={500}
           className="w-full"
         />
       </Link>
@@ -30,14 +30,15 @@ export default function Product({ product }) {
           <h4 className="text-sm text-center dark:text-slate-200 text-slate-800 my-2">
             {product.title}
           </h4>
+          {/* <p>{category.title}</p> */}
         </Link>
         <div className="flex items-center justify-between gap-2 pb-3 dark:text-slate-200 text-slate-800">
-          <p>৳ {product.salePrice}</p>
+        <p>৳ {product.salePrice}</p>
           <button
             onClick={() => handleAddToCart()}
-            className="flex items-center space-x-2 bg-gray-100 px-3 py-2 rounded-md text-black border border-gray-300"
+            className="flex items-center hover:bg-gray-100 px-3 py-3 rounded-full text-black"
           >
-            <ShoppingCart size={18} />
+            <ShoppingCart size={17} />
             {/* <span>Add</span> */}
           </button>
         </div>
