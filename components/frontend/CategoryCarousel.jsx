@@ -6,11 +6,11 @@ import React from "react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import Product from "./Product";
-export default function CategoryCarousel({ products, isMarketPage = false }) {
+export default function   CategoryCarousel({ products, isMarketPage = false }) {
   const responsive = {
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
-      items: isMarketPage ? 4 : 5,
+      items: isMarketPage ? 5 : 6,
       slidesToSlide: 2, // optional, default to 1.
     },
     tablet: {
@@ -20,7 +20,7 @@ export default function CategoryCarousel({ products, isMarketPage = false }) {
     },
     mobile: {
       breakpoint: { max: 464, min: 0 },
-      items: 3,
+      items: 2,
       slidesToSlide: 1, // optional, default to 1.
     },
   };
@@ -41,7 +41,7 @@ export default function CategoryCarousel({ products, isMarketPage = false }) {
       removeArrowOnDeviceType={["tablet", "mobile"]}
       // deviceType={}
       dotListClass="custom-dot-list-style"
-      itemClass="px-.5"
+      itemClass="px-0"
     >
       {products.map((product, i) => {
         return <Product product={product} key={i} />;
