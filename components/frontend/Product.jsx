@@ -15,7 +15,7 @@ export default function Product({ product }) {
     toast.success("Item added Successfully");
   }
   return (
-    <div className="mb-5 mx-1 bg-white dark:bg-slate-900 overflow-hidden border hover:shadow">
+    <div className="mb-2 mx-1 bg-white dark:bg-slate-900 overflow-hidden border hover:shadow">
       <Link href={`/products/${product.slug}`}>
         <Image
           src={product.imageUrl}
