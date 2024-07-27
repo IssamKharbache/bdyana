@@ -26,7 +26,7 @@ export default function   CategoryCarousel({ products, isMarketPage = false }) {
   };
   return (
     <Carousel
-      swipeable={false}
+      swipeable={true}
       draggable={false}
       showDots={false}
       responsive={responsive}
