@@ -4,7 +4,7 @@ import CategoryCarousel from "@/components/frontend/CategoryCarousel";
 import ProductImageCarousel from "@/components/frontend/ProductImageCarousel";
 import ProductShareButton from "@/components/frontend/ProductShareButton";
 import { getData } from "@/lib/getData";
-import { BaggageClaim, Minus, Plus, Send, Share2, Tag } from "lucide-react";
+import { BaggageClaim, Minus, Plus, Send, Share2, Tag, PhoneCall } from "lucide-react";
 import { ShoppingCart } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
@@ -31,43 +31,51 @@ export default async function ProductDetailPage({ params: { slug } }) {
         </div>
         <div className="col-span-12 md:col-span-7 lg:col-span-5">
           <div className="flex items-center justify-between mb-6">
-            <h2 className="text-xl lg:text-2xl font-semibold">
+            <h2 className="text-xl lg:text-2xl">
               {product.title}
             </h2>
             <ProductShareButton urlToShare={urlToShare} />
           </div>
-          <div className="border-b border-gray-500">
+          <div className="border-b border-gray-300">
             <p className="py-2 ">{product.description}</p>
             <div className="flex items-center gap-8 mb-4 justify-between">
-              <p>SKU: {product.sku}</p>
-              <p className="bg-lime-200 py-1.5 px-4 rounded-full text-slate-900 ">
+              <h4>SKU: {product.sku}</h4>
+              <p className="py-1.5 px-4 border rounded-full text-slate-900 ">
                 <b>Stock</b>: {product.productStock}
               </p>
             </div>
           </div>
-          <div className="flex items-center justify-between gap-4 pt-4 border-b border-gray-500 pb-4">
-            <div className="flex items-center gap-4">
-              <h4 className="text-2xl">৳ {product.salePrice}</h4>
-              <del className="text-slate-400 text-sm">
+          <div className="flex items-center justify-between gap-4 pt-4 border-b border-gray-300 pb-4">
+            <div className="items-center gap-4">
+              <h4 className="text-2xl flex">৳ {product.salePrice}</h4>
+              <del className="text-slate-400 text-md">
                 ৳ {product.productPrice}
               </del>
             </div>
-            <p className="flex items-center">
+            <p className="flex items-center bg-lime-200 py-2 px-4 rounded-full text-slate-900 ">
               <Tag className="w-5 h-5 text-slate-400 me-2" />
-              <span>Save 50% right now</span>
+              <h4>Save <b>TK- 50</b></h4>
             </p>
           </div>
           <div className="flex justify-between items-center py-6">
             <AddToCartButton product={product} />
-            <p>Something Here</p>
+            <div className="flex gap-3">
+              <div>
+              <PhoneCall className="mt-3"/>
+              </div>
+              <div>
+              <h4>Call for Any Query :</h4>
+              <p><b> 01511- 309 309</b></p>
+              </div>
+            </div>
           </div>
         </div>
         <div className="col-span-12 md:col-span-5 lg:col-span-3 sm:block bg-white border border-gray-300 rounded-lg  dark:bg-gray-700 dark:border-gray-700 text-slate-800 overflow-hidden hidden">
           <h2 className="bg-slate-100 dark:bg-gray-800 py-3 px-6 font-semibold border-b border-gray-300 dark:border-gray-600 text-slate-800 dark:text-slate-100">
             DELIVERY & RETURNS
           </h2>
-
-          {/* <div className="p-4">
+{/* 
+          <div className="p-4">
             <div className="flex rounded-lg py-2 px-4 bg-orange-400 text-slate-50 items-center gap-3">
               <span>BDyana Express </span>
               <Send />
@@ -115,7 +123,7 @@ export default async function ProductDetailPage({ params: { slug } }) {
         </div>
       </div>
       <div className="bg-white dark:bg-slate-700 my-8 rounded-xl p-4">
-        <h2 className="mb-4 text-xl font-semibold text-slate-200 ml-3">
+        <h2 className="mb-4 text-xl font-semibold dark:text-slate-200 ml-3">
           Similar Products
         </h2>
         <CategoryCarousel products={products} />
