@@ -33,7 +33,7 @@ export default function SearchForm() {
       </div>
       <button
         type="submit"
-        className="inline-flex items-center py-2.5 px-3 ms-2 text-sm font-medium text-white bg-lime-700 rounded-lg border border-lime-700 hover:bg-lime-800 focus:ring-4 focus:outline-none focus:ring-lime-300 dark:bg-lime-600 dark:hover:bg-lime-700 dark:focus:ring-lime-800"
+        className="inline-flex items-center py-2.5 px-3 ms-2 text-sm font-medium text-white bg-gray-800 rounded-lg border border-lime-700 hover:bg-lime-800 focus:ring-4 focus:outline-none focus:ring-lime-300 dark:bg-lime-600 dark:hover:bg-lime-700 dark:focus:ring-lime-800"
       >
         <Search className="w-4 h-4 me-2" />
         Search
