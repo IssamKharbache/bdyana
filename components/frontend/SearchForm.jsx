@@ -26,14 +26,14 @@ export default function SearchForm() {
           {...register("searchTerm")}
           type="text"
           id="voice-search"
-          className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-lime-500 focus:border-lime-500 block w-full ps-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-lime-500 dark:focus:border-lime-500"
+          className="class="bg-gray-50 border border-gray-300 text-gray-900 text-sm focus:ring-gray-500 focus:border-gray-500 block w-full ps-10 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-gray-500 dark:focus:border-gray-500""
           placeholder="Search Products, Categories, Markets..."
           required
         />
       </div>
       <button
         type="submit"
-        className="inline-flex items-center py-2.5 px-3 ms-2 text-sm font-medium text-white bg-gray-800 rounded-lg border border-lime-700 hover:bg-lime-800 focus:ring-4 focus:outline-none focus:ring-lime-300 dark:bg-lime-600 dark:hover:bg-lime-700 dark:focus:ring-lime-800"
+        className="inline-flex items-center py-2.5 px-3 text-sm font-medium text-white bg-gray-700 border border-lime-700 hover:bg-gray-800 focus:outline-none dark:bg-lime-600 dark:hover:bg-lime-700"
       >
         <Search className="w-4 h-4 me-2" />
         Search
