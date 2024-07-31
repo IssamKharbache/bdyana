@@ -15,6 +15,7 @@ export default function SearchForm() {
   }
   return (
     <form onSubmit={handleSubmit(handleSearch)} className="flex items-center">
+      <div className="rounded-lg">
       <label htmlFor="voice-search" className="sr-only">
         Search
       </label>
@@ -26,7 +27,7 @@ export default function SearchForm() {
           {...register("searchTerm")}
           type="text"
           id="voice-search"
-          className="class="bg-gray-50 border border-gray-300 text-gray-900 text-sm focus:ring-gray-500 focus:border-gray-500 block w-full ps-10 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-gray-500 dark:focus:border-gray-500""
+          className="class="bg-gray-50 border border-gray-300 text-gray-900 text-sm focus:ring-gray-500 focus:border-gray-500 block w-full ps-10 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-gray-500 dark:focus:border-gray-500"
           placeholder="Search Products, Categories, Markets..."
           required
         />
@@ -38,6 +39,7 @@ export default function SearchForm() {
         <Search className="w-4 h-4 me-2" />
         Search
       </button>
+        </>
     </form>
   );
 }
