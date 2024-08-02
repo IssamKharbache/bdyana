@@ -13,7 +13,7 @@ export default function CartCount() {
     >
       <ShoppingCart className="text-lime-700 dark:text-lime-500" />
       <span className="sr-only">Cart</span>
-      <div className="absolute inline-flex items-center justify-center w-6 h-6 text-xs font-bold text-white bg-red-500  rounded-full -top-0 end-6 dark:border-gray-900">
+      <div className="absolute inline-flex items-center justify-center w-6 h-6 text-xs font-bold text-white bg-red-500 rounded-full -top-1 right-0 dark:border-gray-900">
         {cartItems.length}
       </div>
     </Link>
