@@ -36,6 +36,15 @@ export default async function ProductDetailPage({ params: { slug } }) {
             </h2>
             <ProductShareButton urlToShare={urlToShare} />
           </div>
+          <div className="flex gap-3 mt-2 mb-8">
+            <div>
+              <p><b>Cateogory : </b><Link className="text-blue-600" href={`/category/${category.slug}`}>{category.title}</Link></p>
+            </div>
+            <span>|</span>
+            <div>
+              <p><b>Brand :</b> Brand Name</p>
+            </div>
+          </div>
           <div className="border-b border-gray-300">
             <p className="py-2 ">{product.description}</p>
             <div className="flex items-center gap-8 mb-4 justify-between">
