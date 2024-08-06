@@ -59,7 +59,7 @@ export default function ProductImageCarousel({
             freeMode={true}
             watchSlidesProgress={true}
             modules={[FreeMode, Navigation, Thumbs]}
-            className="mySwiper"
+            className="mySwiper mt-3"
           >
             {productImages.map((image, i) => {
               return (
