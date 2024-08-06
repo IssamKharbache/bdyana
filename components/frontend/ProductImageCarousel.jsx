@@ -64,7 +64,7 @@ export default function ProductImageCarousel({
             {productImages.map((image, i) => {
               return (
                 <SwiperSlide key={i}>
-                  <img src={image} />
+                  <img src={image} width={60} height={60}/>
                 </SwiperSlide>
               );
             })}
