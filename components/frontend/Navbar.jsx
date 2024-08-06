@@ -10,6 +10,7 @@ import CartCount from "./CartCount";
 import { useSession } from "next-auth/react";
 import UserAvatar from "../backoffice/UserAvatar";
 import ContactInfo from "./ContactInfo";
+import { PhoneCall } from "lucide-react";
 export default function Navbar() {
   const { data: session, status } = useSession();
   if (status === "loading") {
