@@ -33,7 +33,12 @@ export default function Product({ product }) {
           {/* <p>{category.title}</p> */}
         </Link>
         <div className="flex items-center justify-between gap-2 pb-1 dark:text-slate-200 text-slate-800">
-        <p>৳ {product.salePrice}</p>
+        <div>
+            <p>৳ {product.salePrice}</p>
+            <del className="text-slate-400 text-sm">
+              ৳ {product.productPrice}
+            </del>
+        </div>
           <button
             onClick={() => handleAddToCart()}
             className="flex items-center hover:bg-gray-100 px-3 py-3 rounded-full text-black"
