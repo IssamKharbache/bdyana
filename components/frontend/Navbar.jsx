@@ -29,22 +29,29 @@ export default function Navbar() {
             <SearchForm />
             </div>
           </div>
-          
-          <ContactInfo/>
-          <div className="flex gap-1 lg:gap-2">
-            {status === "unauthenticated" ? (
-              <Link
-                href="/login"
-                className="flex items-center space-x-1 text-green-950 dark:text-slate-100"
-              >
-                <User />
-                <span className="md:flex hidden">Login</span>
-              </Link>
-            ) : (
-              <UserAvatar user={session?.user} />
-            )}
-            <CartCount />
-            <ThemeSwitcherBtn />
+          <div className="sm:flex hidden">
+            <ContactInfo/>
+          </div>
+          <div>
+            <div className="flex gap-1 lg:gap-2">
+              {status === "unauthenticated" ? (
+                <Link
+                  href="/login"
+                  className="flex items-center space-x-1 text-green-950 dark:text-slate-100"
+                >
+                  <User />
+                  <span className="md:flex hidden">Login</span>
+                </Link>
+              ) : (
+                <UserAvatar user={session?.user} />
+              )}
+              <CartCount />
+              <ThemeSwitcherBtn />
+            </div>
+              <div className="flex sm:hidden gap-2">
+                <PhoneCall size={14} className="mt-1"/>
+                <h4><b>01511- 309 309</b></h4>
+            </div>
           </div>
         </div>
         <div className="container mx-auto mt-2 pb-2 px-2">
