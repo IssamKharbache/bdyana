@@ -33,10 +33,10 @@ export default function UserAvatar({ user = {} }) {
               alt="User profile"
               width={200}
               height={200}
-              className="w-8 h-8 rounded-full"
+              className="w-6 h-6 rounded-full"
             />
           ) : (
-            <div className="w-10 h-10 p-4 flex items-center justify-center rounded-full bg-slate-50 dark:bg-slate-800 border border-slate-600">
+            <div className="w-8 h-8 p-4 text-sm flex items-center justify-center rounded-full bg-slate-50 dark:bg-slate-800 border border-slate-600">
               {initials}
             </div>
           )}
