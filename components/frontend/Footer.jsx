@@ -191,7 +191,7 @@ const Footer = () => {
               Subscribe to newsletter
             </p>
 
-            <form action="#" method="POST" className="mt-6">
+            <form action="#" method="POST" className="mt-6 flex gap-2">
               <div>
                 <label htmlFor="email" className="sr-only">
                   Email
@@ -201,7 +201,7 @@ const Footer = () => {
                   name="email"
                   id="email"
                   placeholder="Enter your email"
-                  className="block w-full p-4 text-black placeholder-gray-500 transition-all duration-200 bg-white border border-gray-200 rounded-md focus:outline-none focus:border-blue-600 caret-blue-600"
+                  className="flex w-auto px-3 py-2 text-black placeholder-gray-500 transition-all duration-200 bg-white border border-gray-200 rounded-sm focus:outline-none focus:border-gray-600 caret-gray-600"
                 />
               </div>
 
