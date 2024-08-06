@@ -15,7 +15,7 @@ export default function AddToCartButton({ product }) {
   return (
     <button
       onClick={() => handleAddToCart()}
-      className="flex items-center space-x-2 bg-lime-600 px-4 py-2 rounded-md text-white"
+      className="flex items-center space-x-2 bg-gray-800 hover:bg-gray-900 px-4 py-2 rounded-sm text-white"
     >
       <ShoppingCart size={18} />
       <span>Add to Cart</span>
