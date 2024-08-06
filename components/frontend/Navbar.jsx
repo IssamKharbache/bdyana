@@ -54,13 +54,6 @@ export default function Navbar() {
               </div>
           </div>
         </div>
-        {/* <div className="container flex p-0 max-w-6xl">
-            <ul className="flex gap-6">
-              <li>Flash Sale</li>
-              <li>Best Deal</li>
-              <li>Pre Order</li>
-            </ul>
-        </div> */}
     </div>
   );
 }
