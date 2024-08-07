@@ -207,7 +207,7 @@ export default function Sidebar({ showSidebar, setShowSidebar }) {
       >
         <Image src={logo} alt="limifood logo" className="w-36" />
       </Link>
-      <div className="space-y-3 flex flex-col  ">
+      <div className="flex flex-col  ">
         <Link
           onClick={() => setShowSidebar(false)}
           href="/dashboard"
