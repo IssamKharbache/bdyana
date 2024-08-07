@@ -27,7 +27,7 @@ export default function Product({ product }) {
       </Link>
       <div className="px-2">
         <Link href={`/products/${product.slug}`}>
-          <h4 className="text-sm text-center dark:text-slate-200 text-slate-800 my-2">
+          <h4 className="text-sm text-center dark:text-slate-200 text-slate-800 my-2 line-clamp-2">
             {product.title}
           </h4>
           {/* <p>{category.title}</p> */}
@@ -35,7 +35,7 @@ export default function Product({ product }) {
         <div className="flex items-center justify-between gap-2 pb-1 dark:text-slate-200 text-slate-800">
           <div>
               <p>৳ {product?.salePrice}</p>
-              <del className="text-slate-400 text-sm">
+              <del className="text-slate-500 text-sm">
                 ৳ {product?.productPrice}
               </del>
           </div>
