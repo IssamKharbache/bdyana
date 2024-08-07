@@ -21,7 +21,7 @@ export default async function page() {
   const userOrders = orders.filter((order) => order.userId === userId);
   // console.log(userOrders);
   return (
-    <section className="py-12 bg-white sm:py-16 lg:py-20">
+    <section className="py-12 bg-white sm:py-16 lg:py-6">
       <div className="px-4 m-auto sm:px-6 lg:px-8 max-w-7xl">
         <div className="max-w-6xl mx-auto">
           <div>
