@@ -16,7 +16,7 @@ export default async function Hero() {
       <div className="col-span-full sm:col-span-7 bg-blue-600 rounded-sm">
         <HeroCarousel banners={banners} />
       </div>
-      <div className="col-span-2 hidden sm:block bg-white p-3 dark:bg-slate-800 rounded-sm">
+      <div className="col-span-2 hidden sm:block bg-white dark:bg-slate-800 rounded-sm">
         <Link href="#" className="flex items-center space-x-1 mb-5">
           <HelpCircle className="shrink-0 w-5 h-5 dark:text-lime-500 text-slate-900" />
           <div className="flex flex-col">
