@@ -40,10 +40,10 @@ export default async function ProductDetailPage({ params: { slug } }) {
             <div>
               <p><b>Cateogory : </b><Link className="text-blue-600" href={`/category/${category.slug}`}>{category.title}</Link></p>
             </div>
-            <span>|</span>
+{/*             <span>|</span>
             <div>
               <p><b>Brand :</b> Brand Name</p>
-            </div>
+            </div> */}
           </div>
           <div className="border-b border-gray-300">
             <h3>Specification : </h3>
