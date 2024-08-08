@@ -12,7 +12,6 @@ import { useDispatch } from "react-redux";
 
 export default function CartProduct({ cartItem }) {
   const dispatch = useDispatch();
-  //test
   function handleCartItemDelete(cartId) {
     // Dispatch the removeFromCart Reducer
     dispatch(removeFromCart(cartId));
