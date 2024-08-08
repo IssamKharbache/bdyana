@@ -21,9 +21,9 @@ export default function Navbar() {
     <div className="bg-white dark:bg-slate-700 shadow sticky top-0 z-40 w-full backdrop-blur-md">
       <div className="container flex items-center justify-between lg:pt-5 pt-2 lg:px-0 px-5 max-w-6xl gap-6 mx-auto">
         {/* Logo */}
-        {/* <Link className="" href="/">
+         <Link className="" href="/">
           <Image src={logo} alt="BDyana logo" className="w-40" />
-        </Link>*/ }
+        </Link>
       
           {/* SEARCH */}
           <div className="flex-grow hidden md:flex">
