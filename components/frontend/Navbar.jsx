@@ -55,7 +55,7 @@ export default function Navbar() {
             </div>
           </div>
         </div>
-        <div className="container mx-auto mt-2 pb-2 px-2">
+        <div className="container mx-auto mt-1 pb-2 px-2">
           <div className="flex md:hidden mx-auto">
               <div className="flex overflow-hidden w-full">
                 <SearchForm />
