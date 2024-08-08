@@ -34,7 +34,7 @@ export default function Product({ product }) {
         </Link>
         <div className="flex items-center justify-between gap-2 pb-1 dark:text-slate-200 text-slate-800">
           <div>
-              <p>৳ {product?.salePrice}</p>
+              <p className="leading-none">৳ {product?.salePrice}</p>
               <del className="text-slate-500 text-sm">
                 ৳ {product?.productPrice}
               </del>
