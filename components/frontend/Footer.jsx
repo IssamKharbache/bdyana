@@ -3,16 +3,16 @@ const Footer = () => {
   return (
     <section className="py-6 bg-gray-50 sm:pt-16 lg:pt-18">
       <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
-        <div className="grid grid-cols-2 md:col-span-3 lg:grid-cols-6 gap-y-16 gap-x-12">
+        <div className="grid grid-cols-2 md:col-span-3 lg:grid-cols-6 gap-y-8 lg:gap-y-16 gap-x-12">
           <div className="col-span-2 md:col-span-3 lg:col-span-2 lg:pr-8">
             <img className="w-auto h-9" src="/Logo.png" alt="" />
 
-            <p className="text-base leading-relaxed text-gray-600 mt-7">
+            <p className="text-base leading-relaxed text-gray-600 mt-5 lg:mt-7">
               Best Online E-Commerce Website in Bangladesh. You can Buy
               your Essential Products with Best Price. Happy Shopping...
             </p>
 
-            <ul className="flex items-center space-x-3 mt-9">
+            <ul className="flex items-center space-x-3 mt-5 lg:mt-9">
               <li>
                 <a
                   href="#"
@@ -215,7 +215,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <hr className="mt-12 mb-6 border-gray-200" />
+        <hr className="mt-8 lg:mt-12 mb-6 border-gray-200" />
 
         <p className="text-sm text-center text-gray-600">
           © Copyright 2024, All Rights Reserved by <b>BDyana</b>
