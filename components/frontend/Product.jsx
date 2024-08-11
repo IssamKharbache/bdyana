@@ -38,7 +38,7 @@ export default function Product({ product }) {
               <del className="text-slate-500 text-sm mr-2">
                 ৳ {product?.productPrice}
               </del>
-              <h5 className="bg-[#fef3e9] text-[#f68b1e] p-1 inline ">-30%</h5>
+              {/* <h5 className="bg-[#fef3e9] text-[#f68b1e] p-1 inline ">-30%</h5> */}
           </div>
           <button
             onClick={() => handleAddToCart()}
