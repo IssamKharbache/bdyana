@@ -61,6 +61,11 @@ export default function Sidebar({ showSidebar, setShowSidebar }) {
       href: "/dashboard/farmers",
     },
     {
+      title: "Customer Orders",
+      icon: Truck,
+      href: "/dashboard/customerorder",
+    },
+    {
       title: "Orders",
       icon: Truck,
       href: "/dashboard/orders",
@@ -196,7 +201,7 @@ export default function Sidebar({ showSidebar, setShowSidebar }) {
     <div
       className={
         showSidebar
-          ? "sm:block mt-20 sm:mt-0 dark:bg-slate-800 bg-white space-y-6 w-64 h-screen text-slate-800 dark:text-slate-300  fixed left-0 top-0 shadow-md overflow-y-scroll"
+          ? "sm:block mt-20 sm:mt-0 dark:bg-slate-800 bg-white space-y-6 w-50 h-screen text-slate-800 dark:text-slate-300  fixed left-0 top-0 shadow-md overflow-y-scroll"
           : " mt-20 sm:mt-0 hidden sm:block dark:bg-slate-800 bg-white space-y-6 w-64 h-screen text-slate-800 dark:text-slate-300  fixed left-0 top-0 shadow-md overflow-y-scroll"
       }
     >
