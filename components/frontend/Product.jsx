@@ -1,6 +1,7 @@
 "use client";
+import { calculateDiscountPercentage } from "@/lib/calculateDiscount";
 import { addToCart } from "@/redux/slices/cartSlice";
-import { ShoppingCart  } from "lucide-react";
+import { ShoppingCart } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -34,11 +35,21 @@ export default function Product({ product }) {
         </Link>
         <div className="flex items-center justify-between gap-2 pb-1 dark:text-slate-200 text-slate-800">
           <div>
-              <p className="leading-none">৳ {product?.salePrice}</p>
-              <del className="text-slate-500 text-sm mr-2">
-                ৳ {product?.productPrice}
-              </del>
-              {/* <h5 className="bg-[#fef3e9] text-[#f68b1e] p-1 inline ">-30%</h5> */}
+            <p className="leading-none">৳ {product?.salePrice}</p>
+            <del className="text-slate-500 text-sm mr-2">
+              ৳ {product?.productPrice}
+            </del>
+            {/* show discount percentage where applicable */}
+            {product?.salePrice < product?.productPrice && (
+              <h5 className="bg-[#fef3e9] text-[#f68b1e] p-1 inline ">
+                -
+                {calculateDiscountPercentage(
+                  product?.productPrice,
+                  product?.salePrice
+                ).toFixed(0)}
+                %
+              </h5>
+            )}
           </div>
           <button
             onClick={() => handleAddToCart()}
