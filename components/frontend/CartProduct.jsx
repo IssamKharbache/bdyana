@@ -15,7 +15,7 @@ export default function CartProduct({ cartItem }) {
   function handleCartItemDelete(cartId) {
     // Dispatch the removeFromCart Reducer
     dispatch(removeFromCart(cartId));
-    toast.success("Item removed Successfully");
+    toast.success("Product removed Successfully");
   }
   function handleQtyIncrement(cartId) {
     dispatch(incrementQty(cartId));

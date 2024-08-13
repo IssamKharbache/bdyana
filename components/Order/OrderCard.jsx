@@ -121,18 +121,6 @@ export default function OrderCard({ order }) {
                               {" "}
                               View Product{" "}
                             </Link>
-
-                            <span className="text-gray-200"> | </span>
-
-                            <a
-                              href="#"
-                              title=""
-                              className="p-1 -m-1 text-sm font-medium text-gray-500 transition-all duration-200 rounded hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900"
-                            >
-                              {" "}
-                              Similar Product{" "}
-                            </a>
-
                           <button
                             type="button"
                             className="p-1 -m-1 text-sm font-medium text-gray-500 transition-all duration-200 rounded hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900"

@@ -202,7 +202,7 @@ export default function Sidebar({ showSidebar, setShowSidebar }) {
       className={
         showSidebar
           ? "sm:block mt-20 sm:mt-0 dark:bg-slate-800 bg-white space-y-6 w-50 h-screen text-slate-800 dark:text-slate-300  fixed left-0 top-0 shadow-md overflow-y-scroll"
-          : " mt-20 sm:mt-0 hidden sm:block dark:bg-slate-800 bg-white space-y-6 w-64 h-screen text-slate-800 dark:text-slate-300  fixed left-0 top-0 shadow-md overflow-y-scroll"
+          : " mt-20 sm:mt-0 hidden sm:block dark:bg-slate-800 bg-whit w-60 h-screen text-slate-800 dark:text-slate-300  fixed left-0 top-0 shadow-md overflow-y-scroll"
       }
     >
       <Link
@@ -210,7 +210,7 @@ export default function Sidebar({ showSidebar, setShowSidebar }) {
         className="px-6 py-4"
         href="/dashboard"
       >
-        <Image src={logo} alt="limifood logo" className="w-36" />
+        <Image src={logo} alt="BDyana logo" className="w-36" />
       </Link>
       <div className="flex flex-col  ">
         <Link
