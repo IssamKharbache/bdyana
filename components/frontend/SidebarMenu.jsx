@@ -19,7 +19,7 @@ export default async function SidebarCategories() {
             <span className="text-sm">Industrial Machineries</span>
             <ChevronRight className="mr-1 shrink-0 w-4 h-4 dark:text-lime-500 text-slate-400 right-0 absolute hidden group-hover:block" />
           </Link>
-          {/* <ul className="absolute left-[275px] top-0 z-10 w-full px-3 py-1 bg-white h-[340px] hidden group-hover:block">
+          <ul className="absolute left-[275px] top-0 z-10 w-full px-3 py-1 bg-white h-[340px] hidden group-hover:block">
             <li className="py-1 hover:text-blue-700">
               <Link className="hover:text-blue-700" href="">Home Appliancce</Link>
             </li>
@@ -47,7 +47,7 @@ export default async function SidebarCategories() {
             <li className="py-1 hover:text-blue-700">
               <Link className="hover:text-blue-700" href="">Home Appliancce</Link>
             </li>
-          </ul> */}
+          </ul>
         </li>
         <li className="">
           <Link href="https://www.bdyana.com/category/gadget-accessories"

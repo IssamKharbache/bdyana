@@ -8,7 +8,7 @@ export default async function FilteredProducts({
   isSearch,
 }) {
   // PAGINATION
-  const pageSize = 20;
+  const pageSize = 10;
   const totalPages = Math.ceil(productCount / pageSize);
   return (
     <div className="">
